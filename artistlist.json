@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "Adele",
+    "birthdate": "1988-05-05",
+    "activeSince": "2006",
+    "genres": ["Pop", "Soul", "R&B"],
+    "labels": ["XL Recordings", "Columbia Records"],
+    "website": "https://www.adele.com/",
+    "image": "https://example.com/adele.jpg",
+    "shortDescription": "British singer-songwriter known for her powerful vocals."
+  },
+  {
+    "id": 2,
+    "name": "Kendrick Lamar",
+    "birthdate": "1987-06-17",
+    "activeSince": "2003",
+    "genres": ["Hip-Hop", "Rap"],
+    "labels": ["Top Dawg Entertainment", "Interscope Records"],
+    "website": "https://www.kendricklamar.com/",
+    "image": "https://example.com/kendricklamar.jpg",
+    "shortDescription": "Grammy-winning rapper and songwriter."
+  },
+  {
+    "id": 3,
+    "name": "Beyoncé",
+    "birthdate": "1981-09-04",
+    "activeSince": "1997",
+    "genres": ["R&B", "Pop"],
+    "labels": ["Parkwood Entertainment", "Columbia Records"],
+    "website": "https://www.beyonce.com/",
+    "image": "https://example.com/beyonce.jpg",
+    "shortDescription": "Iconic singer, actress, and producer."
+  },
+  {
+    "id": 4,
+    "name": "Ed Sheeran",
+    "birthdate": "1991-02-17",
+    "activeSince": "2004",
+    "genres": ["Pop", "Folk", "Acoustic"],
+    "labels": ["Asylum Records", "Atlantic Records"],
+    "website": "https://www.edsheeran.com/",
+    "image": "https://example.com/edsheeran.jpg",
+    "shortDescription": "Chart-topping British singer-songwriter."
+  },
+  {
+    "id": 5,
+    "name": "Taylor Swift",
+    "birthdate": "1989-12-13",
+    "activeSince": "2004",
+    "genres": ["Pop", "Country", "Rock"],
+    "labels": ["Republic Records", "Big Machine Label Group"],
+    "website": "https://www.taylorswift.com/",
+    "image": "https://example.com/taylorswift.jpg",
+    "shortDescription": "Singer-songwriter known for her storytelling."
+  },
+  {
+    "id": 6,
+    "name": "Drake",
+    "birthdate": "1986-10-24",
+    "activeSince": "2001",
+    "genres": ["Hip-Hop", "Rap"],
+    "labels": ["OVO Sound", "Republic Records"],
+    "website": "https://www.drakeofficial.com/",
+    "image": "https://example.com/drake.jpg",
+    "shortDescription": "Canadian rapper and global music sensation."
+  },
+  {
+    "id": 7,
+    "name": "Ariana Grande",
+    "birthdate": "1993-06-26",
+    "activeSince": "2008",
+    "genres": ["Pop", "R&B"],
+    "labels": ["Republic Records"],
+    "website": "https://www.arianagrande.com/",
+    "image": "https://example.com/arianagrande.jpg",
+    "shortDescription": "Singer, actress, and pop sensation."
+  },
+  {
+    "id": 8,
+    "name": "John Legend",
+    "birthdate": "1978-12-28",
+    "activeSince": "2004",
+    "genres": ["R&B", "Soul", "Pop"],
+    "labels": ["Columbia Records"],
+    "website": "https://www.johnlegend.com/",
+    "image": "https://example.com/johnlegend.jpg",
+    "shortDescription": "Acclaimed singer, songwriter, and pianist."
+  },
+  {
+    "id": 9,
+    "name": "Billie Eilish",
+    "birthdate": "2001-12-18",
+    "activeSince": "2015",
+    "genres": ["Pop", "Electropop"],
+    "labels": ["Darkroom", "Interscope Records"],
+    "website": "https://www.billieeilish.com/",
+    "image": "https://example.com/billieeilish.jpg",
+    "shortDescription": "Youngest artist to win all four major Grammy Awards."
+  },
+  {
+    "id": 10,
+    "name": "The Weeknd",
+    "birthdate": "1990-02-16",
+    "activeSince": "2010",
+    "genres": ["R&B", "Pop", "Alternative"],
+    "labels": ["XO", "Republic Records"],
+    "website": "https://www.theweeknd.com/",
+    "image": "https://example.com/theweeknd.jpg",
+    "shortDescription": "Canadian singer known for his unique sound."
+  }
+]
