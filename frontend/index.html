@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artist Gallery</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <header>10hi</header>
+    
+  <body>
+    <header>
+        <h1>Kinda lame artists gallery</h1>
+    </header>
+    <main>
+
+        <section id="artists-grid" class="grid-container"></section>
+
+<form id="form-create-artist">
+  <h2>Create a new Artist</h2>
+<input type="text" name="name" placeholder="Artist Name" required>
+  <input name="birthdate" placeholder="Birthdate" required>
+  <input type="number" name="activeSince" placeholder="Active Since" required>
+  <input type="text" name="genres" placeholder="Genres (comma-separated)" required>
+  <input type="text" name="labels" placeholder="Labels (comma-separated)" required>
+  <input type="url" name="website" placeholder="Website URL" required>
+  <input type="url" name="image" placeholder="Image URL" required>
+  <input type="text" name="shortDescription" placeholder="Short Description" rows="4" required></input>
+  <button>Create Artist</button>
+</form>
+
+<form id="form-update-artist">
+  <h2>Update Artist Information</h2>
+    <input type="hidden" name="id" value="1"> <!-- Replace with the artist's actual ID -->
+  <input type="text" name="name" placeholder="Artist Name" required>
+  <input name="birthdate" placeholder="Birthdate" required>
+  <input type="number" name="activeSince" placeholder="Active Since" required>
+  <input type="text" name="genres" placeholder="Genres (comma-separated)" required>
+  <input type="text" name="labels" placeholder="Labels (comma-separated)" required>
+  <input type="url" name="website" placeholder="Website URL" required>
+  <input type="url" name="image" placeholder="Image URL" required>
+  <input type="text" name="shortDescription" placeholder="Short Description" rows="4" required></input>
+    <button>Update Artist</button>
+</form>
+</main>
+<script src="app.js"></script>
+</body>
+
+</html>

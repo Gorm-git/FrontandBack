@@ -1,0 +1,87 @@
+html,
+body,
+h1,
+h2,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #d92121;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr; /* Set a single column for both forms */
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f0f0f0; /* Light gray background for the forms */
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%; /* Use 100% width to fill the form container */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+input[type="text"]:required:invalid {
+  border-color: #ff3547;
+}
+
+input[type="text"]:required:valid {
+  border-color: #28a745;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

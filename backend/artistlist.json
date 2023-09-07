@@ -118,5 +118,17 @@
     "image": "https://example.com/theweeknd.jpg",
     "shortDescription": "Canadian singer known for his unique sound.",
     "favorite": false
+  },
+  {
+    "name": "Thomas Gorm Neermark",
+    "birthdate": "17-06-1998",
+    "activeSince": "2022",
+    "genres": "POP",
+    "labels": "Den seje label",
+    "website": "http://127.0.0.1:5501/frontend/index.html",
+    "image": "https://th.bing.com/th/id/OIP.ATzsAebUrGoJ4yQ3o4imAQHaGb?w=248&h=215&c=7&r=0&o=5&dpr=1.5&pid=1.7",
+    "shortDescription": "Jeg ville ønske jeg havde lidt mere tid",
+    "id": 1694121010510,
+    "favorite": false
   }
 ]

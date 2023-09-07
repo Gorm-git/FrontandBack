@@ -121,5 +121,3 @@ async function updateAnArtist(request, response) {
   fs.writeFile("artistlist.json", JSON.stringify(artistList));
   response.json(artistList);
 }
-
-// test

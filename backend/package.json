@@ -2,10 +2,10 @@
   "name": "back-end-stuff",
   "version": "1.0.0",
   "description": "Aflevering",
-  "main": "app.js",
+  "main": "router.js",
   "type": "module",
   "scripts": {
-    "start": "node --watch app.js"
+    "start": "node --watch router.js"
   },
   "author": "Thomas Gorm Neermark",
   "license": "ISC",
