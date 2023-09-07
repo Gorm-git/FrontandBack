@@ -31,8 +31,6 @@ app.get("/", (request, response) => {
   response.send("The website now GET's it");
 });
 
-//Der skal være en funktion som indlæser JSON filen samt vent
-
 //jeg laver et get kald som henter hele listen:
 app.get("/artists", getAllArtists);
 
@@ -41,9 +39,25 @@ app.get("/artists/:id", getOneArtistID);
 
 // Jeg laver nu et post response, som requester bodyen fra det nye object som,
 // er blevet oprettet, dernæst når den har fået artists bodien så skal den give
-//
+// det nye objekt et id baseret på det specifikke milisekund det blev oprettet
+app.post("/artists", postNewArtist);
 
-async function getAllArtists(response) {
+// Nu laver jeg en delete route. Jeg går
+app.delete("/artists/:id", async (request, response) => {
+  const id = request.params.id;
+  const artistList = await getArtistList();
+  const index = artistList.findIndex((artist) => artist.id === id);
+
+  if (index === -1) {
+    response.status(404).json({ message: "Artist not found" });
+  } else {
+    artistList.splice(index, 1);
+
+    response.json(await getArtistList());
+  }
+});
+
+async function getAllArtists(request, response) {
   response.json(await getArtistList());
 }
 
@@ -53,4 +67,16 @@ async function getOneArtistID(request, response) {
   const artistID = artistList.find((artistID) => artistID.id === id);
 
   response.json(artistID);
+}
+
+async function postNewArtist(request, response) {
+  const newArtist = request.body;
+  newArtist.id = new Date().getMilliseconds();
+
+  console.log(newArtist);
+
+  const artistList = await getArtistList();
+  artistList.push(newArtist);
+  fs.writeFile("artistlist.json", JSON.stringify(artistList));
+  response.json(artistList);
 }
