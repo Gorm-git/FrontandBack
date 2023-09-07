@@ -8,7 +8,8 @@
     "labels": ["XL Recordings", "Columbia Records"],
     "website": "https://www.adele.com/",
     "image": "https://example.com/adele.jpg",
-    "shortDescription": "British singer-songwriter known for her powerful vocals."
+    "shortDescription": "British singer-songwriter known for her powerful vocals.",
+    "favorite": false
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "labels": ["Top Dawg Entertainment", "Interscope Records"],
     "website": "https://www.kendricklamar.com/",
     "image": "https://example.com/kendricklamar.jpg",
-    "shortDescription": "Grammy-winning rapper and songwriter."
+    "shortDescription": "Grammy-winning rapper and songwriter.",
+    "favorite": false
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
     "labels": ["Parkwood Entertainment", "Columbia Records"],
     "website": "https://www.beyonce.com/",
     "image": "https://example.com/beyonce.jpg",
-    "shortDescription": "Iconic singer, actress, and producer."
+    "shortDescription": "Iconic singer, actress, and producer.",
+    "favorite": false
   },
   {
     "id": 4,
@@ -41,7 +44,8 @@
     "labels": ["Asylum Records", "Atlantic Records"],
     "website": "https://www.edsheeran.com/",
     "image": "https://example.com/edsheeran.jpg",
-    "shortDescription": "Chart-topping British singer-songwriter."
+    "shortDescription": "Chart-topping British singer-songwriter.",
+    "favorite": false
   },
   {
     "id": 5,
@@ -52,7 +56,8 @@
     "labels": ["Republic Records", "Big Machine Label Group"],
     "website": "https://www.taylorswift.com/",
     "image": "https://example.com/taylorswift.jpg",
-    "shortDescription": "Singer-songwriter known for her storytelling."
+    "shortDescription": "Singer-songwriter known for her storytelling.",
+    "favorite": false
   },
   {
     "id": 6,
@@ -63,7 +68,8 @@
     "labels": ["OVO Sound", "Republic Records"],
     "website": "https://www.drakeofficial.com/",
     "image": "https://example.com/drake.jpg",
-    "shortDescription": "Canadian rapper and global music sensation."
+    "shortDescription": "Canadian rapper and global music sensation.",
+    "favorite": false
   },
   {
     "id": 7,
@@ -74,7 +80,8 @@
     "labels": ["Republic Records"],
     "website": "https://www.arianagrande.com/",
     "image": "https://example.com/arianagrande.jpg",
-    "shortDescription": "Singer, actress, and pop sensation."
+    "shortDescription": "Singer, actress, and pop sensation.",
+    "favorite": false
   },
   {
     "id": 8,
@@ -85,7 +92,8 @@
     "labels": ["Columbia Records"],
     "website": "https://www.johnlegend.com/",
     "image": "https://example.com/johnlegend.jpg",
-    "shortDescription": "Acclaimed singer, songwriter, and pianist."
+    "shortDescription": "Acclaimed singer, songwriter, and pianist.",
+    "favorite": false
   },
   {
     "id": 9,
@@ -96,7 +104,8 @@
     "labels": ["Darkroom", "Interscope Records"],
     "website": "https://www.billieeilish.com/",
     "image": "https://example.com/billieeilish.jpg",
-    "shortDescription": "Youngest artist to win all four major Grammy Awards."
+    "shortDescription": "Youngest artist to win all four major Grammy Awards.",
+    "favorite": false
   },
   {
     "id": 10,
@@ -107,6 +116,7 @@
     "labels": ["XO", "Republic Records"],
     "website": "https://www.theweeknd.com/",
     "image": "https://example.com/theweeknd.jpg",
-    "shortDescription": "Canadian singer known for his unique sound."
+    "shortDescription": "Canadian singer known for his unique sound.",
+    "favorite": false
   }
 ]
