@@ -2,6 +2,8 @@ const endpoint = "http://localhost:5000";
 
 window.addEventListener("load", init);
 
+let artistslist = [];
+
 function init() {
   updateArtistGrid();
 
@@ -148,5 +150,15 @@ function sortByNameZA(a, b) {
 }
 
 function sortArtist() {
-  const sortCriteria = document.querySelector;
+  const sortCriteria = document.querySelector("#sortArtistData");
+  let sortedArtists = artists;
+  if (sortCriteria === "artistNameA") {
+    sortedArtists = sortedArtists.sort(sortByNameAZ);
+  } else if (sortCriteria === "artistNameZ") {
+    sortedArtists = sortedArtists.sort(sortByNameZA);
+  }
+  showArtists(sortedArtists);
 }
+
+const artistSortElement = document.querySelector("#sortAtistData");
+artistSortElement.addEventListener("change", sortArtist);
