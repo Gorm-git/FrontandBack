@@ -2,7 +2,7 @@ const endpoint = "http://localhost:5000";
 
 window.addEventListener("load", init);
 
-let artistslist = [];
+let selectedArtist;
 
 function init() {
   updateArtistGrid();
@@ -102,16 +102,30 @@ function showArtists(artists) {
 }
 
 async function deleteArtist(id) {
-  const response = await fetch(`${endpoint}/artist/${id}`, {
-    method: "DELETE",
+  const response = await fetch(`${endpoint}/artists/${id}`, {
+    method: "delete",
   });
   if (response.ok) {
     updateArtistGrid();
   }
 }
 
+function ArtistToUpdate(artist) {
+  selectedArtist = artist;
+  const form = document.querySelector("#form-update-artist");
+
+  form.name.value = artist.name;
+  form.birthdate.value = artist.birthdate;
+  form.activeSince.value = artist.activeSince;
+  form.genres.value = artist.genres;
+  form.labels.value = artist.labels;
+  form.website.value = artist.website;
+  form.image.value = artist.image;
+  form.shortDescription.value = artist.shortDescription;
+}
+
 async function updateArtist(event) {
-  event.preventDefault();
+  // event.preventDefault();
   const name = event.target.name.value;
   const birthdate = event.target.birthdate.value;
   const activeSince = event.target.activeSince.value;
@@ -132,7 +146,7 @@ async function updateArtist(event) {
     shortDescription,
   };
   const artistAsJson = JSON.stringify(artistUpdate);
-  const response = await fetch(`${endpoint}/artists/${artist.id}`, {
+  const response = await fetch(`${endpoint}/artists/${selectedArtist.id}`, {
     method: "PUT",
     body: artistAsJson,
   });
@@ -150,8 +164,8 @@ function sortByNameZA(a, b) {
 }
 
 function sortArtist() {
-  const sortCriteria = document.querySelector("#sortArtistData");
-  let sortedArtists = artists;
+  const sortCriteria = document.querySelector("#sortArtistData").value;
+  let sortedArtists = artistslist;
   if (sortCriteria === "artistNameA") {
     sortedArtists = sortedArtists.sort(sortByNameAZ);
   } else if (sortCriteria === "artistNameZ") {
@@ -160,5 +174,5 @@ function sortArtist() {
   showArtists(sortedArtists);
 }
 
-const artistSortElement = document.querySelector("#sortAtistData");
+const artistSortElement = document.querySelector("#sortArtistData");
 artistSortElement.addEventListener("change", sortArtist);
