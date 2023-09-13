@@ -129,10 +129,10 @@ async function updateArtist(event) {
     image,
     shortDescription,
   };
-  const userAsJson = JSON.stringify(artistUpdate);
+  const artistAsJson = JSON.stringify(artistUpdate);
   const response = await fetch(`${endpoint}/artists/${artist.id}`, {
     method: "PUT",
-    body: userAsJson,
+    body: artistAsJson,
   });
   if (response.ok) {
     updateArtistGrid();
