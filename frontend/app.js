@@ -138,3 +138,15 @@ async function updateArtist(event) {
     updateArtistGrid();
   }
 }
+
+function sortByNameAZ(a, b) {
+  return a.name.toLowercase().localeCompare(b.navn.toLowercase());
+}
+
+function sortByNameZA(a, b) {
+  return b.name.toLowercase().localeCompare(a.name.toLowercase());
+}
+
+function sortArtist() {
+  const sortCriteria = document.querySelector;
+}
