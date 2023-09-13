@@ -98,7 +98,7 @@ function showArtists(artists) {
     .addEventListener("click", () => deleteArtist(artists.id));
   document
     .querySelector("#artists-grid article:last-child .btn-update-artist")
-    .addEventListener("click", () => updateArtist(artists));
+    .addEventListener("click", () => artistToUpdate(artists));
 }
 
 async function deleteArtist(id) {
@@ -110,7 +110,7 @@ async function deleteArtist(id) {
   }
 }
 
-function ArtistToUpdate(artist) {
+function artistToUpdate(artist) {
   selectedArtist = artist;
   const form = document.querySelector("#form-update-artist");
 
@@ -126,6 +126,7 @@ function ArtistToUpdate(artist) {
 
 async function updateArtist(event) {
   // event.preventDefault();
+  event.preventDefault();
   const name = event.target.name.value;
   const birthdate = event.target.birthdate.value;
   const activeSince = event.target.activeSince.value;
